@@ -196,17 +196,15 @@ function App() {
         <div className="source-row">
           <RoleCard role={roles.r11} onSelect={setSelected} />
         </div>
-        <div className="split-arrows">
-          <div><span>以旧换新 / 维修更换</span><ArrowDown size={18} /></div>
-          <div><span>卖给上门收购个体户</span><ArrowDown size={18} /></div>
-        </div>
         <div className="reverse-lanes">
           <div className="lane lane-left">
+            <div className="lane-arrow"><span>以旧换新 / 维修更换</span><ArrowDown size={18} /></div>
             <div className="lane-label"><span>通路 01</span> 网点回收 <small>政策主渠道</small></div>
             <RoleCard role={roles.r34} onSelect={setSelected} compact />
             <div className="lane-caption"><ClipboardCheck size={15} /> APP 扫码 · 数量 / 重量 / 状态 · ≤3 吨 / ≤90 天</div>
           </div>
           <div className="lane lane-right">
+            <div className="lane-arrow"><span>卖给上门收购个体户</span><ArrowDown size={18} /></div>
             <div className="lane-label"><span>通路 02</span> 散户直收 <small>个体户</small></div>
             <RoleCard role={roles.r5} onSelect={setSelected} compact />
             <div className="lane-caption"><FileCheck2 size={15} /> 身份采集 · 代开发票 · 代付货款</div>
