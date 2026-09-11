@@ -176,6 +176,8 @@ function App() {
           <RoleCard role={roles.r1} onSelect={setSelected} />
           <FlowArrow label="统一分拣配送" />
           <RoleCard role={roles.r34} onSelect={setSelected} />
+          <FlowArrow label="终端销售 / 使用" />
+          <RoleCard role={roles.r11} onSelect={setSelected} />
         </div>
 
         <div className="money-strip">
@@ -193,12 +195,18 @@ function App() {
           <span className="section-description">网点回收与散户直收分开表达，避免角色职责与流向混淆</span>
         </div>
 
-        <div className="source-row">
+        <div className="reverse-source">
           <RoleCard role={roles.r11} onSelect={setSelected} />
-        </div>
-        <div className="split-arrows">
-          <div><span>以旧换新 / 维修更换</span><ArrowDown size={18} /></div>
-          <div><span>卖给上门收购个体户</span><ArrowDown size={18} /></div>
+          <div className="split-arrows">
+            <div className="split-branch">
+              <span>以旧换新 / 维修更换</span>
+              <ArrowDown size={18} />
+            </div>
+            <div className="split-branch">
+              <span>卖给上门收购个体户</span>
+              <ArrowDown size={18} />
+            </div>
+          </div>
         </div>
         <div className="reverse-lanes">
           <div className="lane lane-left">
