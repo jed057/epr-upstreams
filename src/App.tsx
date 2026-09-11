@@ -198,11 +198,11 @@ function App() {
         <div className="reverse-source">
           <RoleCard role={roles.r11} onSelect={setSelected} />
           <div className="split-arrows">
-            <div className="split-branch">
+            <div className="split-branch branch-left">
               <span>以旧换新 / 维修更换</span>
               <ArrowDown size={18} />
             </div>
-            <div className="split-branch">
+            <div className="split-branch branch-right">
               <span>卖给上门收购个体户</span>
               <ArrowDown size={18} />
             </div>
